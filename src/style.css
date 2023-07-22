@@ -70,7 +70,7 @@ and (min-width : 0px) {
 .Card--text--heading{
 
   position: absolute;
-  top:0px;
+  top:15px;
 
 
   margin: auto;
@@ -78,7 +78,7 @@ and (min-width : 0px) {
 
 .Card--controls{
   position: absolute;
-  bottom:20px;
+  bottom:30px;
   width: 490px;
 
   margin: auto;
@@ -243,11 +243,11 @@ form{
 .Card--plan {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
   padding: 19px;
-
   width: 100px;
+  height: 160px;
   border-radius: 8%;
 
   border: solid 1px rgba(0,0,0,0.2);
@@ -256,8 +256,9 @@ form{
 
 
 .Card--plan:hover {
-  background-color: rgba(72,62,255,0.2);
-  color: white;
+  padding: 19px;
+  border: solid 1px #483EFF;
+
 }
 
 
@@ -265,9 +266,11 @@ form{
 
 [type="radio"]:checked + .Card--plan{
 
-  padding: 16px;
+  padding: 18px;
+  background-color: rgba(72,62,255,0.2);
+  color: white;
 
-  border: solid 4px rgba(72,62,255,0.2);
+  border: solid 2px #483EFF;
 }
 
 .Card--plan Label{
